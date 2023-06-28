@@ -9,7 +9,7 @@ import UIKit
 
 public final class BuilderBasedViewController: UIViewController {
     // MARK: Init
-    convenience init(@CustomViewBuilder viewElements: () -> ([UIView])) {
+    public convenience init(@CustomViewBuilder viewElements: () -> ([UIView])) {
         self.init()
         viewElements().forEach {
             mainStackView.addArrangedSubview($0)
@@ -39,7 +39,7 @@ public final class BuilderBasedViewController: UIViewController {
         view.setNeedsUpdateConstraints()
     }
     
-    override func updateViewConstraints() {
+    public override func updateViewConstraints() {
         super.updateViewConstraints()
         NSLayoutConstraint.activate([
             mainStackView.topAnchor.constraint(equalTo: view.topAnchor),

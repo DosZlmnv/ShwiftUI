@@ -9,7 +9,7 @@ import UIKit
 
 @resultBuilder
 public final class CustomViewBuilder {
-    static func buildBlock(_ views: UIView...) -> [UIView] {
+    public static func buildBlock(_ views: UIView...) -> [UIView] {
         return views
     }
 }
