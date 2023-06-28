@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class BuilderBasedViewController: UIViewController {
+public final class BuilderBasedViewController: UIViewController {
     // MARK: Init
     convenience init(@CustomViewBuilder viewElements: () -> ([UIView])) {
         self.init()

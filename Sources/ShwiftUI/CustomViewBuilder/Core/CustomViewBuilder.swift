@@ -8,7 +8,7 @@
 import UIKit
 
 @resultBuilder
-public struct CustomViewBuilder {
+public final class CustomViewBuilder {
     static func buildBlock(_ views: UIView...) -> [UIView] {
         return views
     }
