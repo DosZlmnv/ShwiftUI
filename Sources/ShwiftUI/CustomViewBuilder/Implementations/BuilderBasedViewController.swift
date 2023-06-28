@@ -29,7 +29,7 @@ public final class BuilderBasedViewController: UIViewController {
         .set(\.axis, to: .vertical)
     
     // MARK: Lifecycle
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
     }
